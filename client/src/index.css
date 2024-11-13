@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&display=swap');
+
+/* html,
+body,
+#root{
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif; 
+} */
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: #151515;
+  color: #151515;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #151515;
+} */
+
+#preloader {
+  background-image: url("preloaderblocks.gif");
+  /* background-repeat: no-repeat; */
+  background-size: 48rem;
+  background-color: #231f20;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  /* padding-left: 2rem; */
+  /* padding-right: 2rem; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  animation: fadeOut 2.5s ease-in forwards; /* Animation to fade out the preloader */
+  /* overflow: hidden; /* Hide scrollbars */
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

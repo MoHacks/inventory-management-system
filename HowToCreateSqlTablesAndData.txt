@@ -1,0 +1,8 @@
+1) Open Bash Shell
+2) Within the Bash shell, navigate to the "InventoryDatabase" file that is within the inventory-management-system folder
+3) Then run the command in bash shell: psql -U user_name -d database_name  (It doesnt matter what you put for database_name, and the user_name is by default postgres)
+4) Just choose default options for entering into psql shell (simply keep pressing "Enter")
+5) Then, run the command: \i queries, this will execute the queries SQL script and generate your tables and data
+
+
+You should now be able to see the Tables and Data when you open PgAdmin (GUI for Postgres)!
