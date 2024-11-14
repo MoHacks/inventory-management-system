@@ -12,7 +12,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3001",  # If your frontend is running on localhost:3001
     "http://localhost:8000",  # You can add other origins if needed
-    "https://inventory-management-system-1-cenc.onrender.com/",
+    "https://inventory-management-system-1-cenc.onrender.com",
     # Add other domains or origins as necessary
 ]
 
