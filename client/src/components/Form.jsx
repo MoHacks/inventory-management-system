@@ -62,7 +62,8 @@ const Form = () => {
     // this allows us to send form info with image
 
     // console.log("onSubmitProps: ", onSubmitProps)
-    const savedUserResponse = await fetch("http://localhost:8000/auth/register",
+    // http://localhost:8000/auth/register
+    const savedUserResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/login",
       {
         method: "POST",
         headers: {
@@ -86,8 +87,8 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     try {
-
-      const loggedInResponse = await fetch("http://localhost:8000/auth/login", {
+      // http://localhost:8000/auth/login
+      const loggedInResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
