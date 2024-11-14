@@ -20,7 +20,7 @@ origins = [
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=["*"],
+    allow_origins=["https://inventory-management-system-1-cenc.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
