@@ -8,7 +8,7 @@ from sqlalchemy import text
 
 app = FastAPI()
 
-# Define the origins you want to allow
+# Define the origins you want to allow, I am allowing local hosts and from render
 origins = [
     "http://localhost:3001",  # If your frontend is running on localhost:3001
     "http://localhost:8000",  # You can add other origins if needed
