@@ -63,7 +63,7 @@ const Form = () => {
 
     // console.log("onSubmitProps: ", onSubmitProps)
     // http://localhost:8000/auth/register
-    const savedUserResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/register",
+    const savedUserResponse = await fetch("https://inventory-management-system-p65j.onrender.com/auth/register",
       {
         method: "POST",
         headers: {
@@ -88,7 +88,7 @@ const Form = () => {
   const login = async (values, onSubmitProps) => {
     try {
       // http://localhost:8000/auth/login
-      const loggedInResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/login", {
+      const loggedInResponse = await fetch("https://inventory-management-system-p65j.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
