@@ -63,7 +63,7 @@ const Form = () => {
 
     // console.log("onSubmitProps: ", onSubmitProps)
     // http://localhost:8000/auth/register
-    const savedUserResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/login",
+    const savedUserResponse = await fetch("https://inventory-management-system-1-cenc.onrender.com/auth/register",
       {
         method: "POST",
         headers: {
