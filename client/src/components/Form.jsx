@@ -86,7 +86,6 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     try {
-
       const loggedInResponse = await fetch("https://inventory-management-system-p65j.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

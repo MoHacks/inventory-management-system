@@ -8,9 +8,9 @@ from sqlalchemy import text
 
 app = FastAPI()
 
-# Define the origins you want to allow
+# Define the origins you want to allow, I am allowing local hosts and from render
 origins = [
-    "https://inventory-management-system-1-cenc.onrender.com"
+    "https://inventory-management-system-1-cenc.onrender.com",
     # Add other domains or origins as necessary
 ]
 
