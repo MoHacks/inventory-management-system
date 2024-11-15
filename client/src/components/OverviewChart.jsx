@@ -28,10 +28,6 @@ const OverviewChart = ({ isDashboard = false, view, chartType }) => {
     } else if (view === "units" && chartType === "line") {
       chartData = totalUnitsLine;
     }
-    //else if (view === "sales" && chartType === "bar") {
-    //   chartData = totalSalesBar;
-    // } else if (view === "units" && chartType === "bar") {
-    //   chartData = totalUnitsBar;
 
     else {
       chartData = []; // Default case if none of the conditions match
@@ -318,16 +314,4 @@ const OverviewChart = ({ isDashboard = false, view, chartType }) => {
     />
   );
 };
-
-
-
-// ------------------------
-
-
-// make sure parent container have a defined height when using
-// responsive component, otherwise height will be 0 and
-// no chart will be rendered.
-// website examples showcase many properties,
-// you'll often use just a few of them.
-
 export default OverviewChart;

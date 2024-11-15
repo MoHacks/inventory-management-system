@@ -37,20 +37,6 @@ const Breakdown = () => {
 
     >
       <Header title="BREAKDOWN" subtitle="Breakdown of Sales By Category" />
-      {/* <Box 
-        // mt={4} 
-        // mb={4} 
-        display="flex"
-        // gridColumn="span 4"
-        // gridRow="span 3"
-        // bgcolor={theme.palette.background.alt}
-        p="1.5rem"
-        borderRadius="0.55rem"
-        width="40rem"
-        height="40rem"
-        // justifyContent="center"
-        // alignContent="center"
-      > */}
         <BreakdownChart isDashboard={false} width="100%" height="100%"/>
       </Box>
     // </Box>

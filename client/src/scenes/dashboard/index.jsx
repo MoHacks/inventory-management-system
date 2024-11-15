@@ -108,12 +108,6 @@ const Dashboard = () => {
   return (
     <Box
       m="1.5rem 2.5rem"
-      // sx={{
-      //   "& > .MuiBox-root": {
-      //     // color: "red",
-      //     backgroundColor: "green"
-      //   },
-      // }}
       bgcolor={theme.palette.secondary[800]}
     >
       <FlexBetween>
@@ -151,29 +145,6 @@ const Dashboard = () => {
           },
         }}
       >
-        {/* Row 1 */}
-        {/* <StatBox
-          title="Total Customers"
-          value={data && data.totalCustomers}
-          increase="+14%"
-          description="Since last month"
-          icon={
-            <PersonOutline
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
-            />
-          }
-        />
-        <StatBox
-          title="Sales Today"
-          value={data && data.todayStats.totalSales}
-          increase="+21%"
-          description="Since yesterday"
-          icon={
-            <PointOfSale
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
-            />
-          }
-        /> */}
         <Box
           gridColumn="span 8"
           gridRow="span 2"
@@ -183,28 +154,6 @@ const Dashboard = () => {
           <OverviewChart view="units" isDashboard={true} />
         </Box>
 
-        {/* <StatBox
-          title="Monthly Sales"
-          value={data && data.thisMonthStats.totalSales}
-          increase="+5%"
-          description="Since last month"
-          icon={
-            <MonetizationOn
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
-            />
-          }
-        />
-        <StatBox
-          title="Yearly Sales"
-          value={data && data.yearlySalesTotal}
-          increase="+43%"
-          description="Since yesterday"
-          icon={
-            <TrendingUp
-              sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
-            />
-          }
-        /> */}
         <Box
           display="flex"
           gridColumn="span 4"
@@ -225,7 +174,6 @@ const Dashboard = () => {
             variant="h6"
             display="flex"
             justifyContent="center"
-            // sx={{ color: theme.palette.secondary[100]}}
           >
             Sales By Category
           </Typography>

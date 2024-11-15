@@ -32,9 +32,6 @@ const Geography = (isDashboard = false) => {
             mt="1rem"
             height="35rem"
             width={isDashboard ? "100%" : boxSize / 1.5}
-            // ml="5rem"
-            // border={`1px solid ${theme.palette.secondary[200]}`}
-            // borderRadius="4px"
         >
             {data ? (
             <ResponsiveChoropleth

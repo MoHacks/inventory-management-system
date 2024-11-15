@@ -23,42 +23,7 @@ const BreakdownChart = ({ isDashboard = false, width, height }) => {
     };
   }, []); // Empty dependency array ensures this effect runs only once
 
-  // const sxProps = {
-  //   // set the number within centre of the pie chart to have golden color in dark and light mode 
-  //   "& .MuiBox-root": {
-  //           color: theme.palette.mode === "dark" ? theme.palette.secondary[500] : theme.palette.secondary[600],
-  //   },
-  //   // ...(!isDashboard && isSmallScreen && {
-  //   //   height: boxSize > 400 ? boxSize : "400px",
-  //   //   width: boxSize > 400 ? boxSize : "400px",
-  //   //   // minWidth: '600px',
-  //   //   position: 'absolute',
-  //   //   top: '30%',
-  //   //   left: '0%',
-  //   //   // transform: 'translate(-25%, -25%)',
-  //   //   // textAlign: 'center',
-  //   // }),
-  //   // ...(!isDashboard && !isSmallScreen && {
-  //   //   height: boxSize > 400 ? boxSize : "400px",
-  //   //   width: boxSize > 400 ? boxSize : "400px",
-  //   //   // minWidth: '1200px',
-  //   //   position: 'absolute',
-  //   //   top: '30%',
-  //   //   left: '30%',
-  //   //   // transform: 'translate(-50%, -50%)',
-  //   //   // textAlign: 'center',
-  //   // }),
-
-  //   // ...(isDashboard && isSmallScreen && {
-  //   //   // width: boxSize > 400 ? boxSize : 400,
-  //   //   // minWidth: '1200px',
-  //   //   position: 'absolute',
-  //   //   // top: '60%',
-  //   //   // left: '55%',
-  //   //   transform: 'translate(-15%, 0%)',
-  //   //   textAlign: 'center',
-  //   // }),
-  // };
+  
 
   if (!data || isLoading) return "Loading...";
   // console.log("breakdownData: ", data)
@@ -88,40 +53,7 @@ const BreakdownChart = ({ isDashboard = false, width, height }) => {
       minHeight="20rem"
       minWidth="20rem"
       position="relative"
-      // ml="1rem"
-      // sx={sxProps}
       
-      // position="relative"
-      // display={ !isDashboard && "flex"}
-      // justifyContent={!isDashboard && "center"}  // Center horizontally
-      // alignItems={!isDashboard && "center"}    // Center vertically
-      // sx={{
-      //     ...(!isDashboard && {
-          // height: window.innerWidth/3,
-          // width: window.innerWidth/3, 
-          // height: height,
-          // width: width,
-          // minHeight: window.innerWidth/3,
-          // minWidth: window.innerWidth/3,
-          // position: 'absolute',
-          // top: '60%',
-          // left: '50%',
-          // transform: 'translate(-50%, -50%)',
-          // textAlign: 'center',   // Center-align child elements
-          
-        // }),
-        // ...(!isDashboard && isSmallScreen && {
-        //   height: window.innerWidth/3,
-        //   width: window.innerWidth/3,
-        //   // minHeight: window.innerWidth/3,
-        //   // minWidth: window.innerWidth/3,
-        //   position: 'absolute',
-        //   top: '60%',
-        //   left: '50%',
-        //   transform: 'translate(-25%, -25%)',
-        //   textAlign: 'center',   // Center-align child elements
-        // })
-      // }}
     >
 
       <Typography variant="body2" textAlign="center" position="absolute" top={isDashboard ? "38%" : "45%"} left={isDashboard ? `${Number(41) + boxSize/300}%`: `${Number(41) + boxSize/75}%`} >

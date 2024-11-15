@@ -7,7 +7,6 @@ from sqlalchemy.orm import Session
 
 router = APIRouter(tags=['Client'])
 
-
 @router.get("/inventory", status_code=status.HTTP_200_OK)
 async def get_products_route(db: Session = Depends(get_db),
                             ):

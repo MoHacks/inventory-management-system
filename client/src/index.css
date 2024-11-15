@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&display=swap');
-
-/* html,
-body,
-#root{
-  height: 100%;
-  width: 100%;
-  font-family: 'Inter', sans-serif; 
-} */
-
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
@@ -18,14 +9,6 @@ body {
   width: 10px;
 }
 
-/* ::-webkit-scrollbar-track {
-  background: #151515;
-  color: #151515;
-}
-
-::-webkit-scrollbar-thumb{
-  background: #151515;
-} */
 
 #preloader {
   background-image: url("preloaderblocks.gif");

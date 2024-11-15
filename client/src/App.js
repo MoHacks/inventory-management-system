@@ -26,18 +26,6 @@ function App() {
   const mode = useSelector((state) => state.global.mode); //grabs it from src/state/index.js global: { mode: "light" }
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   const isAuth = Boolean(useSelector((state) => state.global.token));
-  // const dispatch = useDispatch();
-
-  // Rehydrate token from sessionStorage on page reload
-  // useEffect(() => {
-  //   const storedToken = sessionStorage.getItem("authToken");
-  //   // const storedUser = sessionStorage.getItem
-  //   if (storedToken) {
-  //     console.log("storedToken: ", storedToken)
-  //     dispatch(setLogin({ token: storedToken, user: { id: "storedUserId" }}));
-  //   }
-  // }, [dispatch]);
-
   return (
     <div className="app">
       <BrowserRouter>
